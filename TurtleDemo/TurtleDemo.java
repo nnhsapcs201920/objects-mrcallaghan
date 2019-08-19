@@ -8,6 +8,6 @@ public class TurtleDemo
         Turtle crush = new Turtle(ocean);
         crush.setPenColor(Color.RED);
         crush.penDown();
-        crush.forward(50);
+        crush.forward(50);        
     }
 }
