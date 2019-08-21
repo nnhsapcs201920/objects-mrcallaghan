@@ -22,10 +22,20 @@ public class HelloPrinter  //class header
      */
     public static void main(String[] args)  // method header for main method
     {
+        /**
+         * A method contains statements.
+         * 
+         * Statements can envoke other methods (e.g. println).
+         * 
+         * In general, methods are invoked on objects (e.g. System.out).
+         * 
+         * When invoking a method, arguments are passed in paratheses (e.g. "Hello, World!")
+         */
+
         System.out.println("Hello, world.");  // Java print statement
-        
+
         // this is a single-line comment (like # in python)
-        
+
         /*
          * Identifiers are any combination of:
          *      letters
@@ -35,25 +45,66 @@ public class HelloPrinter  //class header
          *      
          *      These are various identifiers:
          */
-        
+
         int y, x2, x_x, X$;
-        
+
         //This is not a valid identifier:
         //int 2y;
-        
+
         /*
          * Identifiers are case sensitive (case matters).
          * 
          * These are 3 different identifiers:
          */
         String box, BOX, Box;
-        
+
         /*
          * By convention, constants are all uppercase.
          *      Use underscores to separate words
          */
+
+        int SPEED_OF_LIGHT = 300_000_000;  // for readability, underscores may be used to separate values 
+        //   in numeric literals
+
+        /**
+         * by convention, all other identifiers start with lowercase letter.
+         *      Subsequent words will start with a capital letter. (CamalCase)
+         */
         
-        int SPEED_OF_LIGHT = 300000000;
+        String firstName;
+        
+        /**
+         * This is a compile-time error. (This code doesn't even compile)
+         */
+        //System.ou.println( "Hello, World." );
+        
+        /**
+         * This is a run-time error. (The code compiles and runs, but generates an exception. (the program 
+         * crashes in most cases)
+         */
+        //System.out.println( 1/0 );
+        
+        /**
+         * This is also a run-time error. (compiles and runs, but doesn't produce the expected result, or outpu)
+         * More specifically, this is a logic error.
+         */
+        
+        System.out.println("Hello, Word");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 }
